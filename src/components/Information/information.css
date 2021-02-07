@@ -1,0 +1,70 @@
+ /* logoinfos */
+     
+ .infoCont{
+        background-color: #444;
+        height :100vh;
+        padding-top: 100px;
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .infoCont .imgInfo {
+        
+       max-width : 250px;
+        margin: 0 auto;
+        
+
+    }
+    .infoCont .imgInfo img{
+        border-radius: 50%;
+        width: 100%;
+        display: block;
+        border-left:4px solid aqua ;
+        border-right:4px solid aqua ;
+    }
+    .infoCont .name { 
+        color:#fff;
+        font-size:30px; 
+        font-weight: bold;
+        margin: 30px auto;
+
+    }
+     .infoCont .jobTitle{
+        color:#fff;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .infoCont .media{
+        
+        text-align: center;
+    }
+    .infoCont .media a{
+        color: #fff;
+        font-size: 40px;
+        margin: 20px auto;
+    }
+    .infoCont .media a:hover{
+        color: aqua;
+    }
+    .donloawdCv{
+        text-align: center;
+    }
+    .donloawdCv a{
+        color: #fff;
+        margin: 20px auto;
+        
+        
+    }
+    .donloawdCv a :hover {
+       color: aqua;
+        
+    }
+    .donloawdCv a span{
+        text-align: center;
+    }
+    .copyright{
+      padding-top: 100px;
+      color: #fff;
+      margin: 0 auto;
+      text-align: center;
+    }

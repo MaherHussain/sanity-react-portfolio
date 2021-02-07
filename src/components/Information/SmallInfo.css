@@ -1,0 +1,35 @@
+.s-info {
+    margin: 0 auto;
+    background-color: #34495e;
+    height: 100vh;
+}
+.s-info .imgInfo {
+    width: 250px;
+    margin:0 auto;
+    padding: 50px 0;
+}
+.s-info .imgInfo img{
+    width: 100%;
+    border-radius: 50%;
+}
+.s-info .name{
+    color: blanchedalmond;
+    font-size: 25px;
+}
+.s-info .jobTitle {
+
+    color: blanchedalmond;
+    font-size: 20px;
+}
+.media{
+        
+        text-align: center;
+    }
+    .s-info .media a{
+        color: #fff;
+        font-size: 40px;
+        margin: 20px auto;
+    }
+    .infoCont .media a:hover{
+        color: aqua;
+    }

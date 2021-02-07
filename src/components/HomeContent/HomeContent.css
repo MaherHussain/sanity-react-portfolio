@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.content-div{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    height: 100vh;
+    margin: 0 auto;
+    color:#fff;
+    padding :28% 25%;
+    overflow: hidden;
+    background :url(../HomeContent/macbook-computer-laptop.jpg) no-repeat #000000;
+    background-size: cover;
+    position: relative;
+}
+.content-div .text-wrap{
+
+}
+.content-div .text-wrap h2 {
+    font-size : 50px;
+    margin: auto 0;
+     
+}
+
+ .content-div .text-wrap p{
+    font-size: 30px;
+ }
+
