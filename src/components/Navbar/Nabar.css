@@ -47,6 +47,9 @@ text-decoration: none;
 .nav-icon a.active .icon{
     color:aqua;
 }
+.nav-Item a.active{
+    color:aqua;
+}
 .nav-icon a .icon:hover{
     color:aqua;
 }

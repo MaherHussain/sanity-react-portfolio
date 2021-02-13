@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
 
 body{
     margin: 0;
@@ -11,6 +14,46 @@ body{
 .app .content {
     flex:90%;
     margin-left: 6%;
+}
+
+.contact-text{
+    text-align: center;
+    padding-top :50px;
+    font-family: 'Lato', sans-serif;
+    margin-top:10%;
+
+}
+.contact-text h2{
+    font-size: 25px;
+    font-weight: bold ;
+}
+.contact-text p{
+    font-weight: 400;
+}
+.contact-text a{
+    display:inline-block;
+    text-decoration: none;
+    border-left: 4px solid black;
+    color: black;
+    padding: 30px;
+    background: linear-gradient(to left,white 50%, aquamarine 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    font-size: 20px;
+    font-weight: 700;
+}
+.contactImage{
+    max-width: 500px;
+    margin : 30% auto;
+    
+}
+.contactImage img{
+    width:100%;
+    display: block;
+    border-radius:0% 32% 29% 21% / 42% 60% 58% 45%   ;
+}
+.contact-text a:hover{
+     background-position: left;
 }
 @media screen and (max-width: 900px){
     .app .content{

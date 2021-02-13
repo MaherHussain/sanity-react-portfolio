@@ -31,7 +31,7 @@ function Skill() {
           {skillData &&
             skillData.map((skill) => (
               <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
-                <div className="skill-con container">
+                <div className="skill-con container ">
                   <div className="row">
                     <div className="col-lg-6 col-md-6 -col-sm-12">
                       <div className="skill-image">
@@ -41,7 +41,7 @@ function Skill() {
                         />
                       </div>
                     </div>
-                    <div className="col-lg-6 col-md-6 -col-sm-12">
+                    <div className="col-lg-6 col-md-6 -col-sm-12 animate__animated animate__fadeInUp">
                       <h3>{skill.skill_name}</h3>
                     </div>
                   </div>

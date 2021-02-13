@@ -14,26 +14,32 @@
     margin: 2rem auto;
     padding: 70px;
     text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    background-color: #e3e3e3;
-    border-radius:0% 100% 19% 81% / 62% 37% 63% 38% ; 
+    border-radius:0% 32% 29% 21% / 42% 60% 58% 45%  ; 
     max-width: 600px;
     color:#161616;
+    background-color:rgba(127, 255, 212, 0.438);
    
+}
+.about-text p{
+     
+    font-weight: 500;
     
-
+    
 }
 .hello {
     font-size: 50px;
     color: #366262;
     
 }
+.about-image {
+    max-width:500px;
+    margin: 50px auto;
+}
 
 .about-image img{
     width: 100%;
     display: block;
-    margin:  0 20px;
+    
 }
 @media screen and (max-width: 600px) {
 .about-head {
