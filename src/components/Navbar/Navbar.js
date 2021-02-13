@@ -25,79 +25,81 @@ export default function Navbar() {
     };
   
    return (
-     <div className="wrapper">
-       <div className="side-wrapper">
-         <div className="bars">
-           {!expanded ? (
-             <FaIcons.FaBars onClick={openMenu} />
-           ) : (
-             <AiIcons.AiOutlineClose onClick={closeMenu} />
-           )}
-         </div>
-         <div className="icons-con">
-           <div className="nav-icon">
-             <NavLink to="/" exact>
-               <span className="icon">
-                 <AiIcons.AiFillHome />
-               </span>
-             </NavLink>
+     <div className="position-fixed d-block h-100" id="sticky-sidebar">
+       <div className="wrapper">
+         <div className="side-wrapper">
+           <div className="bars">
+             {!expanded ? (
+               <FaIcons.FaBars onClick={openMenu} />
+             ) : (
+               <AiIcons.AiOutlineClose onClick={closeMenu} />
+             )}
+           </div>
+           <div className="icons-con">
              <div className="nav-icon">
+               <NavLink to="/" exact>
+                 <span className="icon">
+                   <AiIcons.AiFillHome />
+                 </span>
+               </NavLink>
+               <div className="nav-icon">
+                 <NavLink to="/about">
+                   <span className="icon">
+                     <BsIcons.BsInfo />
+                   </span>
+                 </NavLink>
+               </div>
+               <div className="nav-icon">
+                 <NavLink to="/skills">
+                   <span className="icon">
+                     <GiIcons.GiSkills />
+                   </span>
+                 </NavLink>
+               </div>
+               <div className="nav-icon">
+                 <NavLink to="/portfolio">
+                   <span className="icon">
+                     <AiIcons.AiOutlineFundProjectionScreen />
+                   </span>
+                 </NavLink>
+               </div>
+               <div className="nav-icon">
+                 <NavLink to="/contact">
+                   <span className="icon">
+                     <IoIcons.IoIosAt />
+                   </span>
+                 </NavLink>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div className="links-wrapper">
+           <div className="links-con" onClick={closeMenu}>
+             <div className="nav-Item">
+               <NavLink to="/" exact>
+                 <span className="linkTitle">Home</span>
+               </NavLink>
+             </div>
+             <div className="nav-Item">
                <NavLink to="/about">
-                 <span className="icon">
-                   <BsIcons.BsInfo />
-                 </span>
+                 <span className="linkTitle">About Me</span>
                </NavLink>
              </div>
-             <div className="nav-icon">
+             <div className="nav-Item">
                <NavLink to="/skills">
-                 <span className="icon">
-                   <GiIcons.GiSkills />
-                 </span>
+                 <span className="linkTitle">Skills</span>
                </NavLink>
              </div>
-             <div className="nav-icon">
+             <div className="nav-Item">
                <NavLink to="/portfolio">
-                 <span className="icon">
-                   <AiIcons.AiOutlineFundProjectionScreen />
-                 </span>
+                 <span className="linkTitle">Portfolio</span>
                </NavLink>
              </div>
-             <div className="nav-icon">
+             <div className="nav-Item">
                <NavLink to="/contact">
-                 <span className="icon">
-                   <IoIcons.IoIosAt />
-                 </span>
+                 <span className="linkTitle">Contact</span>
                </NavLink>
              </div>
-           </div>
-         </div>
-       </div>
-       <div className="links-wrapper">
-         <div className="links-con" onClick={closeMenu}>
-           <div className="nav-Item">
-             <NavLink to="/" exact>
-               <span className="linkTitle">Home</span>
-             </NavLink>
-           </div>
-           <div className="nav-Item">
-             <NavLink to="/about">
-               <span className="linkTitle">About Me</span>
-             </NavLink>
-           </div>
-           <div className="nav-Item">
-             <NavLink to="/skills">
-               <span className="linkTitle">Skills</span>
-             </NavLink>
-           </div>
-           <div className="nav-Item">
-             <NavLink to="/portfolio">
-               <span className="linkTitle">Portfolio</span>
-             </NavLink>
-           </div>
-           <div className="nav-Item">
-             <NavLink to="/contact">
-               <span className="linkTitle">Contact</span>
-             </NavLink>
            </div>
          </div>
        </div>

@@ -1,0 +1,39 @@
+.skill-con{
+    height: auto;
+    max-height: 150px;
+    padding: 45px;
+    border-left:4px solid rgb(0, 0, 0); 
+    background: linear-gradient(to left,white 50%, aquamarine 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+} 
+.skill-con h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+.skill-con:hover{
+     
+     background-position: left;
+}
+.skill-image {
+    max-width:50px;
+    max-height: 50px;
+    /* display:inline-block */
+ 
+}
+.skill-image img{
+    width:100%;
+    display: block;
+}
+@media screen and (max-width: 600px){
+    .skill-con{
+        min-height: auto;
+        max-height: 200px;
+    }
+    .skill-con h3 {
+        padding-top: 20px;
+
+    }
+    
+}

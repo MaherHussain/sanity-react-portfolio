@@ -1,9 +1,13 @@
+#sticky-sidebar{
+    z-index: 100;
+    
+}
 .wrapper {
     display: flex;
     flex-direction: row;
     align-content :center;
-    
-    height: 100vh;
+    height:100%;
+    /* height: 100vh; */
    
 }
 .side-wrapper{
