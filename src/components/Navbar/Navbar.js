@@ -16,6 +16,7 @@ export default function Navbar() {
       LinksCon.style.paddingLeft = "50px";
       isExpanded(!expanded);
     }
+    
     const closeMenu = () => {
       const LinksCon = document.querySelector(".links-con");
       LinksCon.style.width = "0px";
@@ -57,7 +58,7 @@ export default function Navbar() {
                  </NavLink>
                </div>
                <div className="nav-icon">
-                 <NavLink to="/portfolio">
+                 <NavLink  to="/portfolio">
                    <span className="icon">
                      <AiIcons.AiOutlineFundProjectionScreen />
                    </span>
@@ -91,7 +92,7 @@ export default function Navbar() {
                </NavLink>
              </div>
              <div className="nav-Item">
-               <NavLink to="/portfolio">
+               <NavLink to="/portfolio/all">
                  <span className="linkTitle">Portfolio</span>
                </NavLink>
              </div>

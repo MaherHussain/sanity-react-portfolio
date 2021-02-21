@@ -30,14 +30,14 @@ function Skill() {
         <div className="row ">
           {skillData &&
             skillData.map((skill) => (
-              <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
+              <div className="col-lg-4 col-md-6 col-sm-12 mt-4" key={skill.skill_name}>
                 <div className="skill-con container ">
                   <div className="row">
                     <div className="col-lg-6 col-md-6 -col-sm-12">
                       <div className="skill-image">
                         <img
                           src={skill.skillImage.asset.url}
-                          alt={skill.skillImage.alt}
+                          alt={skill.skill_name}
                         />
                       </div>
                     </div>

@@ -7,10 +7,12 @@ export default {
       name: "project_title",
       type: "string",
     },
+    
     {
       name: "project_link",
       type: "string",
     },
+    
     {
       name: "project_image",
       type: "image",
@@ -18,7 +20,7 @@ export default {
         hotspot: true,
       },
     },
-   
+
     {
       name: "category",
       type: "array",

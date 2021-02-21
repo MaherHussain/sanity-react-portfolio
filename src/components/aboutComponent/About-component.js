@@ -15,7 +15,7 @@ function About() {
         <div className="row ">
           <div className="col-lg-4 col-md-12 pl-0 pr-0">
             <div className="about-image animate__animated animate__backInLeft">
-              <img src={aboutImage} alt="about-image" />
+              <img src={aboutImage} alt="aboutMe" />
             </div>
           </div>
           <div className="col-lg-8 col-md-12 pl-0 pr-0">
