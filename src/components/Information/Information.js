@@ -3,7 +3,10 @@ import './information.css'
 import myImage from '../../assest/myfoto.jpg'
 import * as TiIcons from "react-icons/ti";
 export default function Information() {
+  const date = new Date();
+  const year = date.getFullYear()
     return (
+      
       <div>
         <div className="infoCont">
           <div className="imgInfo">
@@ -43,7 +46,7 @@ export default function Information() {
               <span>Download CV</span>
             </a>
           </div>
-          <div className="copyright">&copy; 2020 All rights reserved.</div>
+          <div className="copyright">&copy; {year} All rights reserved.</div>
         </div>
       </div>
     );

@@ -4,9 +4,11 @@ import AboutText from '../components/aboutComponent/About-component'
 
 function About() {
     return (
-      <div className="content">
-        <AboutText />
-      </div>
+      
+        <div className="content">
+          <AboutText />
+        </div>
+      
     );
 }
 

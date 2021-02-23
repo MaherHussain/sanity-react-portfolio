@@ -15,13 +15,16 @@ export default function Contact() {
                   Ready to start your next project with me? send me an email and
                   I will get back to you as soon as possible!
                 </p>
-                <a href="mailto:maherhussain6@gmail.com">
+                <a
+                  href="mailto:maherhussain6@gmail.com"
+                  className="animate__animated animate__fadeInUp"
+                >
                   maherhussain6@gmail.com
                 </a>
               </div>
             </div>
             <div className="col-lg-6 col-md-12 ">
-              <div className="contactImage">
+              <div className="contactImage animate__animated animate__backInRight">
                 <img src={ContactImage} alt="contact me" />
               </div>
             </div>

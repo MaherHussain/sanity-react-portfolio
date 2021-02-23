@@ -64,7 +64,10 @@ export default function Categories() {
     
     return (
       <div className="container">
-        <h2 className="title"> My Projects</h2>
+        <h2 className="title">
+          {" "}
+          <span className="hello ">M</span>y Projects
+        </h2>
         <div className="isotope-wrapper">
           <div className="categories">
             <div className="row">
@@ -99,7 +102,7 @@ export default function Categories() {
           </div>
           {!projects ? (
             <div className="loader">
-              <SyncLoader color="#00cec9" />
+              <SyncLoader color="#fff" />
             </div>
           ) : (
             <div className="projects">

@@ -1,7 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+/* .about{
+background: url("../aboutComponent/home-office-381229.jpg") no-repeat left  ;
+background-size: contain;
+border-radius: 10px;
+} */
 .about-head{
-    font-size:50px;
+   
     text-align: center;
     padding-bottom: 30px;
     display: inline-block;
@@ -16,35 +21,36 @@
     text-align: center;
     border-radius:0% 32% 29% 21% / 42% 60% 58% 45%  ; 
     max-width: 600px;
-    color:#161616;
-    background-color:rgba(127, 255, 212, 0.438);
+    color:#ffffff;
+    
+    
    
 }
 .about-text p{
-     
+     font-size: 18px;
     font-weight: 500;
     
     
 }
 .hello {
-    font-size: 50px;
-    color: #366262;
+   
+    color: #2fa5a5;
     
 }
 .about-image {
-    max-width:500px;
-    margin: 50px auto;
+  opacity: .7;
+    margin: 50px 20px;
+   
 }
 
 .about-image img{
     width: 100%;
     display: block;
+    border-radius: 0% 32% 29% 21% / 42% 60% 58% 45%; 
     
 }
 @media screen and (max-width: 600px) {
-.about-head {
-    font-size: 20px;
-}
+
 .about-text {
     font-size: 15px;
     font-weight: 300;
@@ -52,10 +58,7 @@
     background:none;
 
 }
-.hello {
-    font-size: 20px;
-  
-}
+
 .about-image img {
     padding: 0 5px;
     margin: auto;

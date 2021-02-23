@@ -15,16 +15,6 @@ function Projects({title,projectLink,projectImage}) {
             </figcaption>
           </div>
         </figure>
-        {/* <div className="img-wrap">
-          <img src={projectImage} alt={title} />
-          <div className="overlay">
-            <h3>{title}</h3>
-            <a href={projectLink} target="_blank" rel="noreferrer">
-              {" "}
-              see project
-            </a>
-          </div>
-        </div> */}
       </div>
     );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutStyle.css'
-import aboutImage from "./aboutImage.jpg";
+import aboutImage from "./home-office-381229.jpg";
 
 
 function About() {
@@ -12,13 +12,13 @@ function About() {
           <span className="hello  ">M</span>e
         </h2>
 
-        <div className="row ">
-          <div className="col-lg-4 col-md-12 pl-0 pr-0">
-            <div className="about-image animate__animated animate__backInLeft">
+        <div className="row about">
+          <div className="col-lg-6 col-md-12 pl-0 pr-0">
+            <div className="about-image">
               <img src={aboutImage} alt="aboutMe" />
             </div>
           </div>
-          <div className="col-lg-8 col-md-12 pl-0 pr-0">
+          <div className="col-lg-6 col-md-12 pl-0 pr-0">
             <div className="about-text animate__animated animate__backInRight">
               <p>
                 <span className="hello ">H</span>

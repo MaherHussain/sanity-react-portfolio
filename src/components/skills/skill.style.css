@@ -1,39 +1,52 @@
-.skill-con{
-    height: auto;
-    max-height: 150px;
-    padding: 45px;
-    border-left:4px solid rgb(0, 0, 0); 
-    background: linear-gradient(to left,white 50%, aquamarine 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
+.skills{
+   margin:25px auto;
+   
 } 
-.skill-con h3 {
+.skills h3 {
     font-size: 20px;
     text-transform: uppercase;
+    display: inline;
+    color:blanchedalmond;
+    padding-left: 20px;
+   
+   
     
 }
-.skill-con:hover{
-     
-     background-position: left;
+.skill-item {
+    padding:20px;
+    margin: 10px auto;
+    position:relative;
+    background:rgba(255, 255, 255, 0.541);
+    min-height: 146px;
+    transition: .5s;
+     -webkit-box-shadow: 0px 12px 28px -7px #f9fafaa6; 
+    box-shadow: 0px 12px 28px -7px #feffffa6;
+    
 }
+
 .skill-image {
-    max-width:50px;
-    max-height: 50px;
-    /* display:inline-block */
+    width:20%;
+    display:inline-block;
+    margin-top: 38px;
  
 }
+.skill-name{
+    display:inline-block;
+    position: absolute;
+    top:50%;
+  
+
+}
 .skill-image img{
+  
     width:100%;
     display: block;
 }
 @media screen and (max-width: 600px){
-    .skill-con{
-        min-height: auto;
-        max-height: 200px;
+   .skill-image{
+       margin-top: 16px;
+   }
+    .skill-item{
+        min-height: fit-content;
     }
-    .skill-con h3 {
-        padding-top: 20px;
-
-    }
-    
 }

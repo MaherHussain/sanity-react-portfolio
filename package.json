@@ -13,6 +13,7 @@
     "react-click-outside": "github:tj/react-click-outside",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
+    "react-particles-js": "^3.4.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-spinners": "^0.10.6",
