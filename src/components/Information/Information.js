@@ -1,6 +1,7 @@
 import React from 'react'
 import './information.css'
 import myImage from '../../assest/myfoto.jpg'
+import cv from '../../assest/Cv-Engilsh.pdf'
 import * as TiIcons from "react-icons/ti";
 export default function Information() {
   const date = new Date();
@@ -42,7 +43,7 @@ export default function Information() {
           </div>
 
           <div className="donloawdCv">
-            <a href="http://maherweb.dk/" rel="noreferrer" target="_blank">
+            <a href={cv} rel="noreferrer" target="_blank">
               <span>Download CV</span>
             </a>
           </div>
