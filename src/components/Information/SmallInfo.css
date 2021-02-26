@@ -1,6 +1,6 @@
 .s-info {
     margin: 0 auto;
-    background-color: #34495e;
+    background-color: #34495e98;
     height: 100vh;
 }
 .s-info .imgInfo {
@@ -32,4 +32,11 @@
     }
     .infoCont .media a:hover{
         color: aqua;
+    }
+    .info-page{
+        background:#000 url("../../assest/black-white-futuristic-spaces.jpg") no-repeat top center  ;
+        background-size: cover;
+        height: 101vh;
+        max-height:100% ;
+        
     }

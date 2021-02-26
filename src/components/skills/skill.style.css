@@ -9,14 +9,18 @@
     color:blanchedalmond;
     padding-left: 20px;
    
-   
+}
+.skills-page{
+    background:#000 url("../../assest/black-white-futuristic-spaces.jpg") no-repeat top center  ;
+    background-size: cover;
+    height: 100vh;
     
 }
 .skill-item {
     padding:20px;
     margin: 10px auto;
     position:relative;
-    background:rgba(255, 255, 255, 0.541);
+    background:#2a665d;
     min-height: 146px;
     transition: .5s;
      -webkit-box-shadow: 0px 12px 28px -7px #f9fafaa6; 
@@ -43,6 +47,9 @@
     display: block;
 }
 @media screen and (max-width: 600px){
+    .skills-page{
+        height:100%;
+    }
    .skill-image{
        margin-top: 16px;
    }

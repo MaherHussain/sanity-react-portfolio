@@ -63,76 +63,59 @@ export default function Categories() {
     },[]) 
     
     return (
-      <div className="container">
-        <h2 className="title">
-          {" "}
-          <span className="hello ">M</span>y Projects
-        </h2>
-        <div className="isotope-wrapper">
-          <div className="categories">
-            <div className="row">
-              <div className="col-12">
-                <form className="isotope-toolbar">
-                  <label>
-                    <input
-                      type="radio"
-                      value="all"
-                      name="category"
-                      onChange={OnChangeHandler}
-                      checked={categoryValue.category === "all"}
-                    />
-                    <span>all</span>
-                  </label>
-                  {categories &&
-                    categories.map((category) => (
-                      <label key={category.title}>
-                        <input
-                          type="radio"
-                          value={category.title}
-                          name="category"
-                          onChange={OnChangeHandler}
-                          checked={categoryValue.category === category.title}
-                        />
-                        <span>{category.title}</span>
-                      </label>
-                    ))}
-                </form>
+      <div className="projects-page">
+        <div className="container">
+          <h2 className="title">
+            {" "}
+            <span className="hello ">M</span>y Projects
+          </h2>
+          <div className="isotope-wrapper">
+            <div className="categories">
+              <div className="row">
+                <div className="col-12">
+                  <form className="isotope-toolbar">
+                    <label>
+                      <input
+                        type="radio"
+                        value="all"
+                        name="category"
+                        onChange={OnChangeHandler}
+                        checked={categoryValue.category === "all"}
+                      />
+                      <span>all</span>
+                    </label>
+                    {categories &&
+                      categories.map((category) => (
+                        <label key={category.title}>
+                          <input
+                            type="radio"
+                            value={category.title}
+                            name="category"
+                            onChange={OnChangeHandler}
+                            checked={categoryValue.category === category.title}
+                          />
+                          <span>{category.title}</span>
+                        </label>
+                      ))}
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
-          {!projects ? (
-            <div className="loader">
-              <SyncLoader color="#fff" />
-            </div>
-          ) : (
-            <div className="projects">
-              <div class="isotope-box row">
-                {categoryValue.category === "all"
-                  ? projects &&
-                    projects.map((project) => (
-                      <div
-                        className="col-lg-4 col-md-6 col-sm-12"
-                        key={project.project_title}
-                      >
-                        <div className="isotope-item hovereffect">
-                          <Project
-                            title={project.project_title}
-                            projectLink={project.project_link}
-                            projectImage={project.project_image.asset.url}
-                          />
-                        </div>
-                      </div>
-                    ))
-                  : projects
-                      .filter(
-                        (item) => item.category.title === categoryValue.category
-                      )
-                      .map((project) => (
+            {!projects ? (
+              <div className="loader">
+                <SyncLoader color="#fff" />
+              </div>
+            ) : (
+              <div className="projects">
+                <div class="isotope-box row">
+                  {categoryValue.category === "all"
+                    ? projects &&
+                      projects.map((project) => (
                         <div
-                          className="col-lg-4 col-md-6 col-sm-12"
+                          className="col-lg-4 col-md-6 col-sm-12 "
                           key={project.project_title}
                         >
-                          <div className="isotope-item hovereffect">
+                          <div className="isotope-item hovereffect ">
                             <Project
                               title={project.project_title}
                               projectLink={project.project_link}
@@ -140,10 +123,30 @@ export default function Categories() {
                             />
                           </div>
                         </div>
-                      ))}
+                      ))
+                    : projects
+                        .filter(
+                          (item) =>
+                            item.category.title === categoryValue.category
+                        )
+                        .map((project) => (
+                          <div
+                            className="col-lg-4 col-md-6 col-sm-12 "
+                            key={project.project_title}
+                          >
+                            <div className="isotope-item hovereffect ">
+                              <Project
+                                title={project.project_title}
+                                projectLink={project.project_link}
+                                projectImage={project.project_image.asset.url}
+                              />
+                            </div>
+                          </div>
+                        ))}
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     );

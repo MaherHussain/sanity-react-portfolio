@@ -3,19 +3,20 @@
 .content-div{
     font-family: 'Lato', sans-serif;
     text-align: center;
+    
+    width : 100%;
     height: 100vh;
-    margin: 0 auto;
     color:#fff;
     padding :28% 25%;
     overflow: hidden;
     background :url(../HomeContent/macbook-computer-laptop.jpg) no-repeat #000000;
     background-size: cover;
-    position: relative;
+    display: block;
 }
 
 .content-div .text-wrap h2 {
     font-size : 50px;
-    margin: auto 0;
+    
      
 }
 

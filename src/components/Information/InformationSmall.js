@@ -1,13 +1,15 @@
 import React from 'react'
 import './SmallInfo.css'
 import myImage from '../../assest/myfoto.jpg'
-
+import cv from "../../assest/Cv-Engilsh.pdf";
 import * as TiIcons from "react-icons/ti";
+const date = new Date();
+const year = date.getFullYear();
 export default function InformationSsmall() {
     return (
-      <div>
+      <div class="info-page">
         <div className="s-info">
-          <div className="imgInfo">
+          <div className="imgInfo animate__animated animate__fadeInDownBig">
             <img src={myImage} alt="Maher" />
           </div>
 
@@ -39,12 +41,12 @@ export default function InformationSsmall() {
             </a>
           </div>
 
-          <div className="donloawdCv" rel="noreferrer" target="_blank">
-            <a href="http://maherweb.dk/">
+          <div className="donloawdCv">
+            <a href={cv} target="_blank" rel="noreferrer">
               <span>Download CV</span>
             </a>
           </div>
-          <div className="copyright">&copy; 2020 All rights reserved.</div>
+          <div className="copyright">&copy; {year} All rights reserved.</div>
         </div>
       </div>
     );

@@ -6,8 +6,8 @@
     display: flex;
     flex-direction: row;
     align-content :center;
-    height:100%;
-    /* height: 100vh; */
+   /*  height:100%; */
+    height: 100vh;
    
 }
 .side-wrapper{
@@ -82,4 +82,15 @@ text-decoration: none;
     color: #fff;
     
     font-size:30px;
+}
+@media screen and (max-width: 600px){
+    .side-wrapper {
+        width: 75px;
+    }
+    .icon{
+        font-size:25px;
+    }
+    .icons-con{
+        padding-right: 0px;
+    }
 }
