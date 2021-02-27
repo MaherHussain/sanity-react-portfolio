@@ -1,7 +1,7 @@
 .s-info {
     margin: 0 auto;
-    background-color: #34495e98;
-    height: 100vh;
+   
+   
 }
 .s-info .imgInfo {
     width: 250px;
@@ -36,7 +36,9 @@
     .info-page{
         background:#000 url("../../assest/black-white-futuristic-spaces.jpg") no-repeat top center  ;
         background-size: cover;
-        height: 101vh;
+        height: 100vh;
         max-height:100% ;
+        position: relative;
         
     }
+    

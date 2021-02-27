@@ -6,20 +6,28 @@
     display: flex;
     flex-direction: row;
     align-content :center;
-   /*  height:100%; */
+    min-height:100%;
     height: 100vh;
+    background-color: black;
    
 }
 .side-wrapper{
-width: 100px;
-background-color: black;
+    width: 100px;
+
+}
+.bars {
+  
+   font-size:30px;
+   color:#fff;
+   cursor: pointer;
+  padding: 10px 23px;
 
 }
 
 .icons-con{
     text-align: center;
-    background-color: black;
-    padding-top: 55px;
+   
+    
     padding-right: 20px;
     
 }
@@ -27,13 +35,12 @@ background-color: black;
     padding-top: 30px;
 }
 .links-con{
-    background-color: black;
-   /*  flex:75%; */
-    padding-top: 51px;
+    
+    padding-top: 63px;
     width:0;
     transition: width 350ms ;
     display: none;
-    min-height: 100vh;
+    
     
    
 }
@@ -54,7 +61,7 @@ text-decoration: none;
     color:aqua;
 }
 .links-con div:nth-child(2),.links-con div:nth-child(3),.links-con div:nth-child(4),.links-con div:nth-child(5){
-    padding-top: 52px;
+    padding-top: 50px;
 }
 .nav-Item{
  padding-top: 47px;
@@ -65,18 +72,7 @@ text-decoration: none;
  color: #fff;
  
 }
-.bars {
-  
-   font-size:30px;
-   color:#fff;
-   cursor: pointer;
-   background-color: black;
-   height: 50px;
-   position: absolute;
-   top:10px;
-   left:23px;
-    
-}
+
 
 .icon{
     color: #fff;
@@ -84,8 +80,11 @@ text-decoration: none;
     font-size:30px;
 }
 @media screen and (max-width: 600px){
+   .bars{
+       padding:10px;
+   }
     .side-wrapper {
-        width: 75px;
+        width: 50px;
     }
     .icon{
         font-size:25px;
@@ -93,4 +92,7 @@ text-decoration: none;
     .icons-con{
         padding-right: 0px;
     }
+    .links-con div:nth-child(2), .links-con div:nth-child(3), .links-con div:nth-child(4), .links-con div:nth-child(5) {
+    padding-top: 41px;
+}
 }

@@ -49,6 +49,7 @@
 @media screen and (max-width: 600px){
     .skills-page{
         height:100%;
+        min-height: 100vh;
     }
    .skill-image{
        margin-top: 16px;
