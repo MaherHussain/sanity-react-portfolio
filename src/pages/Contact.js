@@ -1,12 +1,31 @@
 import React from 'react';
+import Particles from "react-particles-js";
 import ContactImage from "../assest/contactMe.jpg" 
 import '../App.css'
 
 
 export default function Contact() {
     return (
-      <div className="content">
-        <div className="contact-page">
+      <div className="contact-page">
+        <Particles
+          params={{
+            particles: {
+              number: {
+                value: 50,
+              },
+              size: {
+                value: 3,
+              },
+              shape: {
+                type: "circle",
+                stroke: {
+                  width: 6,
+                  color: "#218c74",
+                },
+              },
+            },
+          }}
+        />
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12 col-sm-12">
@@ -23,16 +42,11 @@ export default function Contact() {
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 ">
               <div className="contactImage ">
-                <img
-                  src={ContactImage}
-                  alt="contact me"
-                  className=""
-                />
+                <img src={ContactImage} alt="contact me" className="" />
               </div>
             </div>
           </div>
         </div>
-       </div>
       </div>
     );
 }

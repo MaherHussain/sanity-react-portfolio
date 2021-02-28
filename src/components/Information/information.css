@@ -1,35 +1,44 @@
- /* logoinfos */
-     
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+ /* info style  */
+     .info-page{
+        font-family: 'Lato', sans-serif;
+        height: 100vh;
+        max-height:100% ;
+        position: relative;
+        z-index: 3;
+        
+    }
  .infoCont{
-      
+        text-align: center;
         height :100vh;
         padding-top: 100px;
         
+        
     }
-    .infoCont .imgInfo {
+    .infoCont .My-image {
         
        max-width : 250px;
         margin: 0 auto;
         
 
     }
-    .infoCont .imgInfo img{
+    .infoCont .My-image img{
         border-radius: 50%;
         width: 100%;
         display: block;
         border-left:4px solid aqua ;
         border-right:4px solid aqua ;
     }
-    .infoCont .name { 
+    .infoCont h2 { 
         color:#fff;
-        font-size:30px; 
+         
         font-weight: bold;
         margin: 30px auto;
 
     }
-     .infoCont .jobTitle{
+     .infoCont h3{
         color:#fff;
-        font-size: 15px;
+        
         font-weight: 500;
     }
     .infoCont .media{
@@ -44,9 +53,7 @@
     .infoCont .media a:hover{
         color: aqua;
     }
-    .donloawdCv{
-        text-align: center;
-    }
+    
     .donloawdCv a{
         color: #fff;
         margin: 20px auto;
@@ -62,15 +69,40 @@
     }
     .copyright{
       position: absolute;
-        bottom: 15px;
-        left:35%;
+      bottom: 15px;
+      left: 32%;
       color: #fff;
       
       text-align: center;
     }
+
+/* home content style */ 
+.content-div{
+    
+    text-align: center;
+    
+    width : 100%;
+    height: 100vh;
+    color:#fff;
+    padding :28% 25%;
+    overflow: hidden;
+    background :url("../../assest/macbook-computer-laptop.jpg") no-repeat #000000;
+    background-size: cover;
+    display: block;
+}
+
+/* media query  */ 
     
     @media screen and (max-width: 600px){
     .copyright{
         left:20%;
+    }
+    .infoCont h2 { 
+        font-size:20px
+
+    }
+     .infoCont h3{
+         
+        font-size:18px
     }
 }

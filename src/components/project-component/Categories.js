@@ -63,7 +63,7 @@ export default function Categories() {
     },[]) 
     
     return (
-      <div className="projects-page">
+      
         <div className="container">
           <h2 className="title">
             {" "}
@@ -148,6 +148,6 @@ export default function Categories() {
             )}
           </div>
         </div>
-      </div>
+      
     );
 }

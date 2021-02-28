@@ -5,27 +5,55 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: lightslategray;
-    height: 100%;
-    max-height: 100%;
+    
+    
+    
 }
+/* scroolbar style */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: aqua; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 255, 0.507); 
+}
+
 .app{
     display: flex;
     flex-direction: row;
     align-content :center;
     
+    cursor:  url('../src/assest/mouse-pointer.png') ,auto;
 }
 .app .content {
     flex:90%;
-    margin-left: 6%;
-   
-    
-}
-.contact-page{
+    margin-left: 5.5%;
     background:#000 url("../src/assest/black-white-futuristic-spaces.jpg") no-repeat top center  ;
     background-size: cover;
+    
+}
+
+
+
+.contact-page{
+     
     height: 100%;
     min-height:100vh ;
+    overflow: hidden;
 }
 h2{
     color:#fff;
@@ -74,8 +102,11 @@ h2{
 }
 .tsparticles-canvas-el{
     position: absolute;
-    height: 100vh;
-    width:100vw;
+    top:0;
+    left:0;
+    height: 100vh !important;
+    
+    z-index: 0;
    
 
 }
@@ -96,5 +127,9 @@ h2{
         font-size: 15px;
         font-weight: 500;
     }
+  .tsparticles-canvas-el{
+      width:100% !important;
+      height:100% !important;
+  }
   
 }

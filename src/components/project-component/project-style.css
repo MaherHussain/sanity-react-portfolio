@@ -52,6 +52,7 @@
 .isotope-toolbar input[type="radio"]:checked + span {
     color: aqua;
     border-bottom: 2px solid aqua;
+    padding: 5px;
 }
 
 

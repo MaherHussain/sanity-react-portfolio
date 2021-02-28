@@ -27,7 +27,7 @@ function Skill() {
         .catch(console.error);
     }, []);
     return (
-      <div className="skills-page">
+      <div className="">
         <div className="container">
           <h2 className="title">
             <span className="hello">M</span>y skills

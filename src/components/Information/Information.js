@@ -1,68 +1,64 @@
 import React from 'react'
 import './information.css'
+
 import myImage from '../../assest/myfoto.jpg'
 import cv from '../../assest/Cv-Engilsh.pdf'
 import * as TiIcons from "react-icons/ti";
-import HomeContent from '../HomeContent/HomeContent'
+
 export default function Information() {
   const date = new Date();
   const year = date.getFullYear()
     return (
-      <div className="info-page">
-        <div className="container-fluid ">
-          <div className="row">
-            <div className="col-4 m-0 p-0">
-              <div className="infoCont">
-                <div className="imgInfo">
-                  <img src={myImage} alt="Maher" />
-                </div>
+      
+    
+      <div className="container-fluid  m-0 ">
+        <div className="row ">
+          <div className="col-lg-4 col-md-12 m-0 p-0">
+            <div className="infoCont">
+              <div className="My-image">
+                <img src={myImage} alt={myImage} />
+              </div>
+              <h2>Maher Hussain</h2>
+              <h3>fullstack web developer </h3>
+              <div className="media">
+                <a
+                  href="https://github.com/Maherhussain"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <TiIcons.TiSocialGithub />
+                </a>
 
-                <div className="name text-center">Maher Hussain</div>
-
-                <div className="jobTitle text-center">
-                  fullstack web developer
-                </div>
-
-                <div className="media">
-                  <a
-                    href="https://github.com/Maherhussain"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <TiIcons.TiSocialGithub />
-                  </a>
-                  <a
-                    href="https://www.facebook.com/maher.husen.9"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <TiIcons.TiSocialFacebook />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/maher-hussain/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <TiIcons.TiSocialLinkedin />
-                  </a>
-                </div>
-
-                <div className="donloawdCv">
-                  <a href={cv} rel="noreferrer" target="_blank">
-                    <span>Download CV</span>
-                  </a>
-                </div>
-                <div className="copyright">
-                  &copy; {year} All rights reserved.
-                </div>
+                <a
+                  href="https://www.linkedin.com/in/maher-hussain/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <TiIcons.TiSocialLinkedin />
+                </a>
+              </div>
+              <div className="donloawdCv">
+                <a href={cv} target="_blank" rel="noreferrer">
+                  <span>Download CV</span>
+                </a>
               </div>
             </div>
-            <div className="col-8 m-0 p-0">
-              <HomeContent />
+            <div className="copyright">&copy; {year} All rights reserved.</div>
+          </div>
+          <div className="col-lg-8   d-none d-lg-block  m-0 p-0">
+            <div className="content-div">
+              <div className="text-wrap">
+                <p className="animate__animated  animate__backInLeft ">
+                  Hello I am{" "}
+                </p>
+                <h2 className="animate__animated  animate__backInRight animate__delay-2s">
+                  Maher Hussain
+                </h2>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
     );
 }
-
