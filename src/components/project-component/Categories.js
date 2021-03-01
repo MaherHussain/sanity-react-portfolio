@@ -94,7 +94,7 @@ export default function Categories() {
                             onChange={OnChangeHandler}
                             checked={categoryValue.category === category.title}
                           />
-                          <span>{category.title}</span>
+                          <span className="category-title">{category.title}</span>
                         </label>
                       ))}
                   </form>

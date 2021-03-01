@@ -26,9 +26,8 @@ function About() {
               <div className="col-lg-6 col-md-12 pl-0 pr-0">
                 <div className="about-text ">
                   <p className="animate__animated animate__backInRight">
-                    <span>H</span>
-                    ello........ My name is Maher Hussain. I am originally from
-                    Syria and settled in Denmark. I am an energetic and
+                    Hello........ My name is Maher Hussain. I am originally from
+                    Syria and currently I live in Denmark. I am an energetic and
                     imaginative web developer who is able to work independently
                     as well as alongside other developers in creating websites
                     of the very highest standards. I can and like building

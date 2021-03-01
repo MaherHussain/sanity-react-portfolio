@@ -13,7 +13,7 @@
 .skills-page{
     background:#000 url("../../assest/black-white-futuristic-spaces.jpg") no-repeat top center  ;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     
 }
 .skill-item {
