@@ -76,7 +76,7 @@ export default function Navbar({ closeMenu, expanded, isExpanded, openMenu }) {
               </NavLink>
             </div>
             <div className="nav-Item">
-              <NavLink to="/portfolio/all">
+              <NavLink to="/portfolio">
                 <span className="linkTitle">Portfolio</span>
               </NavLink>
             </div>
