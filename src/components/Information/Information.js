@@ -2,7 +2,7 @@ import React from 'react'
 import './information.css'
 
 import myImage from '../../assest/myfoto.jpg'
-import cv from '../../assest/Cv-Engilsh.pdf'
+import cv from '../../assest/Cv-Engilsh.new.pdf'
 import * as TiIcons from "react-icons/ti";
 
 export default function Information() {
