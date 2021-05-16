@@ -9,8 +9,6 @@ export default function Information() {
   const date = new Date();
   const year = date.getFullYear()
     return (
-      
-    
       <div className="container-fluid  m-0 ">
         <div className="row ">
           <div className="col-lg-4 col-md-12 m-0 p-0">
@@ -18,32 +16,37 @@ export default function Information() {
               <div className="My-image">
                 <img src={myImage} alt={myImage} />
               </div>
-              <h2>Maher Hussain</h2>
-              <h3>fullstack web developer </h3>
-              <div className="media">
-                <a
-                  href="https://github.com/Maherhussain"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <TiIcons.TiSocialGithub />
-                </a>
+              <div className="shadow"> </div>
+              <div className="info">
+                <h2>Maher Hussain</h2>
+                <h3>fullstack web developer </h3>
+                <div className="media">
+                  <a
+                    href="https://github.com/Maherhussain"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <TiIcons.TiSocialGithub />
+                  </a>
 
-                <a
-                  href="https://www.linkedin.com/in/maher-hussain/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <TiIcons.TiSocialLinkedin />
-                </a>
+                  <a
+                    href="https://www.linkedin.com/in/maher-hussain/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <TiIcons.TiSocialLinkedin />
+                  </a>
+                </div>
+                <div className="donloawdCv">
+                  <a href={cv} target="_blank" rel="noreferrer">
+                    <span>Download CV</span>
+                  </a>
+                </div>
               </div>
-              <div className="donloawdCv">
-                <a href={cv} target="_blank" rel="noreferrer">
-                  <span>Download CV</span>
-                </a>
+              <div className="copyright">
+                &copy; {year} All rights reserved.
               </div>
             </div>
-            <div className="copyright">&copy; {year} All rights reserved.</div>
           </div>
           <div className="col-lg-8   d-none d-lg-block  m-0 p-0">
             <div className="content-div">
@@ -59,6 +62,5 @@ export default function Information() {
           </div>
         </div>
       </div>
-      
     );
 }

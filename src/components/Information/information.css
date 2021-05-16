@@ -1,108 +1,158 @@
- @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
- /* info style  */
-     .info-page{
-        font-family: 'Lato', sans-serif;
-        height: 100vh;
-        max-height:100% ;
-        position: relative;
-        z-index: 3;
-        
-    }
- .infoCont{
-        text-align: center;
-        height :100vh;
-        padding-top: 100px;
-        
-        
-    }
-    .infoCont .My-image {
-        
-       max-width : 250px;
-        margin: 0 auto;
-        
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+/* info style  */
+.info-page {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  max-height: 100%;
+  position: relative;
+  z-index: 3;
+}
+.infoCont {
+  text-align: center;
+  height: 100vh;
+  padding-top: 100px;
+}
+.infoCont .My-image {
+  max-width: 250px;
+  margin: 0 auto;
+  animation: mymove 5s infinite;
+  /*  
+  box-shadow: 0 4px 2px -2px rgb(253, 251, 251); */
+}
+.infoCont .My-image img {
+  border-radius: 50%;
+  width: 100%;
+  display: block;
+  border-left: 4px solid aqua;
+  border-right: 4px solid aqua;
 
-    }
-    .infoCont .My-image img{
-        border-radius: 50%;
-        width: 100%;
-        display: block;
-        border-left:4px solid aqua ;
-        border-right:4px solid aqua ;
-    }
-    .infoCont h2 { 
-        color:#fff;
-         
-        font-weight: bold;
-        margin: 30px auto;
+  position: relative;
+}
+.infoCont .shadow {
+  width: 100px;
+  height: 2px;
+  border-radius: 30%;
+  animation: shmymove 5s infinite;
+  background: #e3e3e3fc;
+  backdrop-filter: blur(25px);
+  
+  -webkit-backdrop-filter: blur(25px);
+  margin: 5px auto;
+}
+@keyframes mymove {
+  0% {
+    transform: translateY(-2px);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+@keyframes shmymove {
+  0% {
+    width: 100px;
+    height: 2px;
+  }
+  25% {
+    width: 25px;
+    height: 4px;
+  }
+  50% {
+    width: 100px;
+    height: 2px;
+  }
+  75% {
+    width: 25px;
+    height: 4px;
+  }
+  100% {
+    width: 100px;
+    height: 2px;
+  }
+}
+.infoCont .info{
+margin: 50px auto;
+position: fixed;
+top:50%;
+left:13%;
+}
+.infoCont h2 {
+  color: #fff;
 
-    }
-     .infoCont h3{
-        color:#fff;
-        
-        font-weight: 500;
-    }
-    .infoCont .media{
-        
-        text-align: center;
-    }
-    .infoCont .media a{
-        color: #fff;
-        font-size: 40px;
-        margin: 20px auto;
-    }
-    .infoCont .media a:hover{
-        color: aqua;
-    }
-    
-    .donloawdCv a{
-        color: #fff;
-        margin: 20px auto;
-        
-        
-    }
-    .donloawdCv a :hover {
-       color: aqua;
-        
-    }
-    .donloawdCv a span{
-        text-align: center;
-    }
-    .copyright{
-      position: absolute;
-      bottom: 15px;
-      left: 32%;
-      color: #fff;
-      
-      text-align: center;
-    }
+  font-weight: bold;
+  
+}
+.infoCont h3 {
+  color: #fff;
 
-/* home content style */ 
-.content-div{
-    
-    text-align: center;
-    
-    width : 100%;
-    height: 100vh;
-    color:#fff;
-    padding :28% 25%;
-    overflow: hidden;
-    background :url("../../assest/macbook-computer-laptop.jpg") no-repeat #000000;
-    background-size: cover;
-    display: block;
+  font-weight: 500;
+}
+.infoCont .media {
+  text-align: center;
+}
+.infoCont .media a {
+  color: #fff;
+  font-size: 40px;
+  margin: 20px auto;
+}
+.infoCont .media a:hover {
+  color: aqua;
 }
 
-/* media query  */ 
-    
-    @media screen and (max-width: 600px){
-    .copyright{
-        left:20%;
-    }
-    .infoCont h2 { 
-        font-size:20px
+.donloawdCv a {
+  color: #fff;
+  margin: 20px auto;
+}
+.donloawdCv a :hover {
+  color: aqua;
+}
+.donloawdCv a span {
+  text-align: center;
+}
+.copyright {
+  position: absolute;
+  bottom: 15px;
+  left: 32%;
+  color: #fff;
 
+  text-align: center;
+}
+
+/* home content style */
+.content-div {
+  text-align: center;
+
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  padding: 28% 25%;
+  overflow: hidden;
+  background: url("../../assest/macbook-computer-laptop.jpg") no-repeat #000000;
+  background-size: cover;
+  display: block;
+}
+
+/* media query  */
+
+@media screen and (max-width: 600px) {
+    .infoCont .info{
+        left:30%;
     }
-     .infoCont h3{
-         
-        font-size:18px
-    }
+  .copyright {
+    left: 20%;
+  }
+  .infoCont h2 {
+    font-size: 20px;
+  }
+  .infoCont h3 {
+    font-size: 18px;
+  }
 }
