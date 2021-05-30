@@ -58,24 +58,24 @@
 }
 @keyframes shmymove {
   0% {
-    width: 100px;
-    height: 2px;
+    width: 25px;
+    height: 4px;
   }
   25% {
-    width: 25px;
-    height: 4px;
+    width: 100px;
+    height: 2px;
   }
   50% {
-    width: 100px;
-    height: 2px;
-  }
-  75% {
     width: 25px;
     height: 4px;
   }
-  100% {
+  75% {
     width: 100px;
     height: 2px;
+  }
+  100% {
+    width: 25px;
+    height: 4px;
   }
 }
 .infoCont .info{
