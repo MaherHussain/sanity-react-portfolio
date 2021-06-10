@@ -61,27 +61,27 @@ export default function Navbar({ closeMenu, expanded, isExpanded, openMenu }) {
         <div className="links-wrapper">
           <div className="links-con" onClick={closeMenu}>
             <div className="nav-Item">
-              <NavLink to="/" exact>
+              <NavLink to="/" exact data-text="Home">
                 <span className="linkTitle">Home</span>
               </NavLink>
             </div>
             <div className="nav-Item">
-              <NavLink to="/about">
-                <span className="linkTitle">About Me</span>
+              <NavLink to="/about" data-text="About">
+                <span className="linkTitle">About</span>
               </NavLink>
             </div>
             <div className="nav-Item">
-              <NavLink to="/skills">
+              <NavLink to="/skills" data-text="Skills">
                 <span className="linkTitle">Skills</span>
               </NavLink>
             </div>
             <div className="nav-Item">
-              <NavLink to="/portfolio">
+              <NavLink to="/portfolio" data-text="Portfolio">
                 <span className="linkTitle">Portfolio</span>
               </NavLink>
             </div>
             <div className="nav-Item">
-              <NavLink to="/contact">
+              <NavLink to="/contact" data-text="Contact">
                 <span className="linkTitle">Contact</span>
               </NavLink>
             </div>
