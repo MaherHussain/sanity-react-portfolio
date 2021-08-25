@@ -19,7 +19,7 @@ export default function Information() {
               <div className="shadow"> </div>
               <div className="info">
                 <h2>Maher Hussain</h2>
-                <h3>fullstack web developer </h3>
+                <h3>Frontend web developer </h3>
                 <div className="media">
                   <a
                     href="https://github.com/Maherhussain"

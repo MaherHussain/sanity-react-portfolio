@@ -16,6 +16,7 @@ function App() {
     LinksCon.style.width = "200px";
     LinksCon.style.display = "block";
     LinksCon.style.paddingLeft = "50px";
+    LinksCon.style.transtion = "width 3s"; 
     isExpanded(!expanded);
   };
 
@@ -24,6 +25,7 @@ function App() {
     LinksCon.style.width = "0px";
     LinksCon.style.display = "none";
     LinksCon.style.paddingLeft = "0px";
+    LinksCon.style.transtion = "width 3s";
     isExpanded(!expanded);
   };
   return (
