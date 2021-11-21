@@ -31,7 +31,7 @@ export default function Contact() {
             <div className="col-lg-6 col-md-12 col-sm-12">
               <h2 className="title">Keep in touch</h2>
               <p>
-                Ready to start your next project with me? send me an email and I
+                Ready to start your next project with me? Send me an email and I
                 will get back to you as soon as possible!
               </p>
               <div className="email animate__animated animate__fadeInLeft">
