@@ -30,7 +30,7 @@ function About() {
                     Syria and currently I live in Denmark. I am an energetic and
                     imaginative web developer who is able to work independently
                     as well as alongside other developers in creating websites
-                    of the very highest standards. I can and like building
+                    of the very highest standards. I like building
                     websites using the newest technologies.
                   </p>
                 </div>

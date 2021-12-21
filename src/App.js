@@ -37,7 +37,7 @@ function App() {
           expanded={expanded}
           isExpanded={isExpanded}
         />
-        <div class="content"  onClick={expanded ? closeMenu : undefined}>
+        <div className="content"  onClick={expanded ? closeMenu : undefined}>
           <Switch>
             <Route component={Home} path="/" exact />
             <Route component={About} path="/about" />
